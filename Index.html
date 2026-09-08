@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Lucas Jones — Strategy & Analytics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+    :root {
+        --bg: #1A1A1F;
+        --text: #E6E6E6;
+        --muted: #A0A0A8;
+        --accent: #5A78FF;
+        --card: #232329;
+        --border: #2E2E35;
+    }
+    body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: Inter, Helvetica, Arial, sans-serif;
+        line-height: 1.55;
+    }
+    h1, h2, h3 {
+        font-family: "Source Serif Pro", Georgia, serif;
+        margin: 0 0 0.4rem 0;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .container { width: 88%; max-width: 900px; margin: 0 auto; padding-top: 60px; }
+
+    nav {
+        display: flex;
+        gap: 2rem;
+        font-size: 0.9rem;
+        margin-bottom: 60px;
+    }
+    nav a { color: var(--text); }
+    nav span { color: var(--accent); margin-right: 4px; }
+
+    .header { margin-bottom: 60px; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; }
+
+    .statbar {
+        display: flex;
+        gap: 2rem;
+        margin: 60px 0;
+    }
+    .stat { flex: 1; }
+    .stat h2 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+    .stat p { font-size: 0.9rem; color: var(--muted); }
+
+    .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        padding: 24px;
+        margin-bottom: 32px;
+        border-radius: 6px;
+    }
+    .card-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+        color: var(--muted);
+    }
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+    .card-title strong { color: var(--text); }
+    .tags {
+        font-size: 0.85rem;
+        color: var(--accent);
+        margin-bottom: 12px;
+    }
+    .details { display: none; margin-top: 12px; }
+    .tools {
+        margin-top: 12px;
+        font-size: 0.85rem;
+        color: var(--muted);
+    }
+    .toggle {
+        margin-top: 12px;
+        font-size: 0.9rem;
+        color: var(--accent);
+        cursor: pointer;
+    }
+
+    .skills { margin: 60px 0; }
+    .skills h3 { margin-bottom: 12px; }
+    .skills ul { list-style: none; padding: 0; margin: 0 0 24px 0; }
+    .skills li { margin-bottom: 6px; }
+
+    .edu { margin: 60px 0; }
+    .edu p { margin: 6px 0; }
+
+    footer {
+        margin: 80px 0 40px 0;
+        font-size: 0.9rem;
+        color: var(--muted);
+    }
+</style>
+
+<script>
+function toggleDetails(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "none" ? "block" : "none";
+}
+</script>
+</head>
+
+<body>
+<div class="container">
+
+    <nav>
+        <a href="#"><span>01</span>Work</a>
+        <a href="#"><span>02</span>Projects</a>
+        <a href="#"><span>03</span>About</a>
+        <a href="#"><span>04</span>Résumé</a>
+        <a href="mailto:lucasj@uark.edu">Contact</a>
+    </nav>
+
+    <div class="header">
+        <h1>Lucas Jones</h1>
+        <p>Strategy & analytics focused on CPG, retail, and finance.</p>
+        <p class="meta">
+            Based in Fayetteville, AR · Currently M.S. Business Analytics Candidate, University of Arkansas ·
+            Focus: Strategy, CPG/Retail Analytics, Finance · Open to relocation
+        </p>
+    </div>
+
+    <div class="statbar">
+        <div class="stat">
+            <h2>~$12M</h2>
+            <p>Annualized lost sales identified</p>
+        </div>
+        <div class="stat">
+            <h2>50% / $1M+</h2>
+            <p>Projected ROI lift / new annualized revenue</p>
+        </div>
+        <div class="stat">
+            <h2>1.46M</h2>
+            <p>Student records analyzed</p>
+        </div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="card">
+        <div class="card-header">
+            <div>2026</div>
+            <div>001</div>
+        </div>
+        <div class="tags">2026 • Retail/CPG • Advantage Solutions</div>
+        <div class="card-title"><strong>Identified ~$12M in annualized lost sales</strong></div>
+        <div class="toggle" onclick="toggleDetails('adv')">View details</div>
+        <div class="details" id="adv">
+            <ul>
+                <li>Led a full account review for a multi-billion-dollar client, diagnosing execution gaps across high-velocity products.</li>
+                <li>Built an AI-assisted analytics tool integrating strategy, financial data, and syndicated market data.</li>
+                <li>Recommended a resource shift projected to lift ROI by 50% and generate $1M+ in new annualized revenue.</li>
+                <li>Presented findings to client leadership and executives in Rogers, AR and St. Louis, MO.</li>
+                <li>Supported account management across multiple national clients with audits and KPI tracking.</li>
+            </ul>
+            <div class="tools">Excel · Power BI · SQL · Python · Retail/Syndicated Data</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div>2025</div>
+            <div>002</div>
+        </div>
+        <div class="tags">2025 • Market Research • Advocate Pay</div>
+        <div class="card-title"><strong>Built a 25,000+ firm market database</strong></div>
+        <div class="toggle" onclick="toggleDetails('advp')">View details</div>
+        <div class="details" id="advp">
+            <ul>
+                <li>Profiled payroll and CPA firm decision-makers to identify acquisition and partnership targets.</li>
+                <li>Analyzed industry and financial trends to surface high-potential opportunities.</li>
+                <li>Built and maintained a 25,000+ firm database using AI-powered scraping and automated workflows.</li>
+            </ul>
+            <div class="tools">Python · Excel · Market Research · Automation</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div>2024–2025</div>
+            <div>003</div>
+        </div>
+        <div class="tags">2024–2025 • Consulting/Data • Information Services Group</div>
+        <div class="card-title"><strong>Designed KPI dashboards for deal-sourcing platform</strong></div>
+        <div class="toggle" onclick="toggleDetails('isg')">View details</div>
+        <div class="details" id="isg">
+            <ul>
+                <li>Built interactive Power BI dashboards tracking KPIs, contract value, and pipeline.</li>
+                <li>Analyzed deal data by project type and geography to identify business development trends.</li>
+                <li>Presented insights to executive stakeholders using SQL- and Excel-integrated data.</li>
+            </ul>
+            <div class="tools">Power BI · SQL · Excel · Dashboard Design</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div>2026–Present</div>
+            <div>004</div>
+        </div>
+        <div class="tags">2026–Present • Teaching • University of Arkansas</div>
+        <div class="card-title"><strong>Graduate Teaching Assistant — Machine Learning & Statistics</strong></div>
+        <div class="tools">Python · R · Statistics · ML</div>
+    </div>
+
+    <h2>Projects & Leadership</h2>
+
+    <div class="card">
+        <div class="card-header">
+            <div>2026</div>
+            <div>005</div>
+        </div>
+        <div class="tags">2026 • Analytics • University of Arkansas</div>
+        <div class="card-title"><strong>Led modeling on 1.46M‑record retention pipeline</strong></div>
+        <div class="toggle" onclick="toggleDetails('emm')">View details</div>
+        <div class="details" id="emm">
+            <ul>
+                <li>Applied machine learning and survival analysis to surface a 20‑point graduation gap.</li>
+                <li>Worked under the Associate Vice Chancellor for Strategic Data and Process Innovation.</li>
+            </ul>
+            <div class="tools">Python · ML · Survival Analysis · SQL</div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <div>2026</div>
+            <div>006</div>
+        </div>
+        <div class="tags">2026 • CPG Analytics • Honors Thesis</div>
+        <div class="card-title"><strong>Machine learning & econometric analysis of beverage CPG brand equity</strong></div>
+        <div class="toggle" onclick="toggleDetails('thesis')">View details</div>
+        <div class="details" id="thesis">
+            <ul>
+                <li>Evaluated brand equity quality across hundreds of beverage brands using Nielsen scanner data.</li>
+                <li>Surfaced insights to improve M&A screening decisions.</li>
+            </ul>
+            <div class="tools">Python · Econometrics · Nielsen Data · ML</div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h2>Skills</h2>
+
+        <h3>Technical & Analytical Tools</h3>
+        <ul>
+            <li>Advanced Excel</li>
+            <li>PowerPoint</li>
+            <li>Power BI</li>
+            <li>Tableau</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>SAS</li>
+            <li>Databricks</li>
+            <li>SAP</li>
+            <li>Claude/ChatGPT/Copilot (agentic workflows & prompt engineering)</li>
+        </ul>
+
+        <h3>Business Skills</h3>
+        <ul>
+            <li>Market Research</li>
+            <li>Project Management</li>
+            <li>Financial Modeling</li>
+            <li>KPI Design</li>
+            <li>Executive Reporting</li>
+            <li>Stakeholder Presentations</li>
+            <li>Cross-Functional Teams</li>
+            <li>Client Account Management</li>
+        </ul>
+    </div>
+
+    <div class="edu">
+        <h2>Education & Certifications</h2>
+        <p>M.S. Business Analytics (Finance & Supply Chain), University of Arkansas — Expected May 2027</p>
+        <p>B.S. Data Science (Business), University of Arkansas — May 2026, Summa Cum Laude, GPA 3.9/4.0, Honors College Graduate</p>
+        <p>Financial Modeling & Valuation Analyst (FMVA) — July 2026</p>
+        <p>Lean Six Sigma (White Belt) — November 2025</p>
+    </div>
+
+    <footer>
+        Lucas Jones · Fayetteville, AR · <a href="mailto:lucasj@uark.edu">lucasj@uark.edu</a> ·
+        <a href="https://linkedin.com/in/lucaspjones">LinkedIn</a> · (832) 840‑1683
+    </footer>
+
+</div>
+</body>
+</html>
